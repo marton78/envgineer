@@ -1,0 +1,42 @@
+{
+  "name": "envgineer",
+  "version": "0.1.0",
+  "description": "Pragmatic secrets management via encrypted .env files",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "envgineer": "lib/index.js"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marton78/envgineer.git"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    "environment",
+    "secrets",
+    "encryption",
+    "git",
+    "ci"
+  ],
+  "author": "Márton Danóczy <marton78@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marton78/envgineer/issues"
+  },
+  "homepage": "https://github.com/marton78/envgineer#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "@types/readline-sync": "^1.4.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
