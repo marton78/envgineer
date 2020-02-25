@@ -34,6 +34,7 @@ function processEnvFile(filename: string, xform: (k: string, v: string) => strin
     const results = /^([\w.-]+)\s*=\s*(.*)?\s*$/.exec(line);
     if (!results) throw new Error(`Couldn't parse line: ${line}`);
     const [, key, val] = results;
+    if (val === undefined) return line;
     return key + "=" + xform(key, val);
   });
 }
