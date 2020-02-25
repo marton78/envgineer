@@ -1,6 +1,6 @@
 {
   "name": "envgineer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pragmatic secrets management via encrypted .env files",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,6 +17,7 @@
   },
   "keywords": [
     "dotenv",
+    ".env",
     "env",
     "environment",
     "secrets",
