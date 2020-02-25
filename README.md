@@ -1,4 +1,4 @@
-# envgineer: Pragmatic secrets management via encrypted environment files
+# envgineer: Pragmatic secrets management via encrypted .env files
 
 With envgineer you can manage secrets in a repository without external tools such as Vault or AWS Secrets Manager. Encrypted .env-files can be safely tracked by a version control system, the only secret to be remembered or added to the CI is the encryption password. Encryption is performed using Node's built-in crypto module with AES-256.
 
