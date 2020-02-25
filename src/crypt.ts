@@ -60,8 +60,6 @@ export function encryptFile(envFile: string, cryptFile: string, passphrase: stri
     else return encryptValue(v, key);
   });
 
-  // Add a final enter if not present
-  if (result[result.length - 1].length > 0) result.push("");
   fs.writeFileSync(cryptFile, result.join("\n"));
 }
 
